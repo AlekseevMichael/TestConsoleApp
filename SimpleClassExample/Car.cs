@@ -8,7 +8,7 @@ namespace SimpleClassExample
 {
     class Car
     {
-        //"Состояние" объекта Car
+        //"Состояние" объекта Car (fields)
         public string petName;
         public int currSpeed;
 

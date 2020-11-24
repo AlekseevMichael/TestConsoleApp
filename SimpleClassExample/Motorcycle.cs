@@ -9,6 +9,12 @@ namespace SimpleClassExample
     class Motorcycle
     {
         public int driverIntensity;
+        public string driverName;
+
+        public void SetDriverName(string name)
+        {
+            this.driverName = name;
+        }
 
         public void PopAWheely()
         {

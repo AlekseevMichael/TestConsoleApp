@@ -41,6 +41,12 @@ namespace SimpleClassExample
             Car daisy = new Car("Daisy", 75);
             daisy.PrintState();
 
+            //Создаем объект Motorcycle с мотоциклистом по имени Tiny
+            Motorcycle c = new Motorcycle(5);
+            c.SetDriverName("Tiny");
+            c.PopAWheely();
+            Console.WriteLine($"Rider name is {c.driverName}");
+
             Console.ReadLine();
         }
     }
