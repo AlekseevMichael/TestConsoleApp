@@ -11,20 +11,21 @@ namespace Tester
         
         static void Main(string[] args)
         {
-            DateTime date = new DateTime(2020,9,30);
-            Console.WriteLine($"date: {date}");
-            date = date.AddDays(1);
-            Console.WriteLine($"date after AddDays: {date}");
-            for (int i = 0; i < 200; i++)
-            {
-                date = date.AddSeconds(-1);
-                Console.WriteLine($"date after AddSeconds: {date}");
-                Console.WriteLine($"Date: {date.Date}");
-                Console.WriteLine($"Date: {date.ToShortDateString()}");
-            }
-            NewClass myClass = new NewClass();
-            
-            
+            Card card = new Card();
+            var x = card.GetCardById(12345);
+
+            var c1 = x?.ID ?? 0;
+            var c2 = x?.Name ?? "Not found";
+
+            Console.WriteLine($"c1 = {x?.ID ?? 0}, c2 = {x?.Name ?? "Not found"}.");
+
+            DateTime from = new DateTime(2020, 11, 30);
+
+            DateTime to = from.AddDays(1);
+            to = to.AddSeconds(-1);
+
+            Console.WriteLine($"to = {from}");
+
 
             Console.ReadLine();
         }

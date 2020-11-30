@@ -9,7 +9,7 @@ namespace StaticDataAndMembers
     class SavingAccount
     {
         public double currBalance;
-        public static double currInterestRate;
+        private static double currInterestRate;
 
         public static double InterestRate
         {

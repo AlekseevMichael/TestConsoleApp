@@ -6,18 +6,29 @@ using System.Threading.Tasks;
 
 namespace Tester
 {
-    public class NewClass
+    public class Card
     {
-        enum ColorsName
+        private int ownerID = 12345;
+        private string ownerName = "Michael";
+
+        public int ID
         {
-            Red,
-            Green,
-            Blue
+            get { return ownerID; } set { }
         }
 
-        static void GetColor(String color)
+        public string Name
         {
-            
+            get { return ownerName; } set { }
+        }
+
+
+
+        public Card GetCardById(int ID)
+        {
+            if (ID > 50000)
+                return new Card { };
+            else
+                return null;
         }
     }
 }
