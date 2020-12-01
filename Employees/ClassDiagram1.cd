@@ -35,5 +35,12 @@
       <FileName>PTSalesPerson.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="Employees.BenefitPackage" Collapsed="true">
+    <Position X="0.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>BenefitPackage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
