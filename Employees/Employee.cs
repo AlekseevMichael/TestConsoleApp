@@ -4,10 +4,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EmployeeApp
+namespace Employees
 {
     partial class Employee
     {
+        //"HAVE" this Object
+        protected BenefitPackage empBenefits = new BenefitPackage();
+
+        //Открывает доступ к некоторому поведению, связанному со льготами
+        public double GetBenefitCost()
+        {
+            return empBenefits.ComputePayDeduction();
+        }
+
+        //Открывает доступ к объекту через специальное свойство
+        public BenefitPackage Benefits
+        {
+            get { return empBenefits; }
+            set { empBenefits = value; }
+        }
+
         //Property
         public string Name
         {
@@ -42,6 +58,7 @@ namespace EmployeeApp
         public string SocialSecurityNumber
         {
             get => empSSN;
+            set => empSSN = value;
         }
 
         //Methods
