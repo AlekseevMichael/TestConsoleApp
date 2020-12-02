@@ -18,7 +18,13 @@ namespace Employees
             fred.SalesNumber = 50;
 
             Manager chucky = new Manager("Chucky", 50, 92, 100000, "333-23-2332", 9000);
-            double cost = chucky.GetBenefitCost();
+            chucky.GiveBonus(300);
+            chucky.DisplayStats();
+            Console.WriteLine();
+
+            SalesPerson frank = new SalesPerson("Frank", 43, 93, 3000, "932-23-3232", 31);
+            frank.GiveBonus(200);
+            frank.DisplayStats();
 
             Console.ReadLine();
         }

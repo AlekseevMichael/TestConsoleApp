@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Employees
 {
-    partial class Employee
+    //Нельзя создавать экземпляры для абстрактных классов!
+    abstract partial class Employee
     {
         //"HAVE" this Object
         protected BenefitPackage empBenefits = new BenefitPackage();
@@ -62,17 +63,18 @@ namespace Employees
         }
 
         //Methods
-        public void GiveBonus (float amount)
+        public virtual void GiveBonus (float amount)
         {
             currPay += amount;
         }
 
-        public void DisplayStats()
+        public virtual void DisplayStats()
         {
             Console.WriteLine("Name: {0}", Name); // Name of employee
             Console.WriteLine("Age: {0}", Age); // Age of employee
             Console.WriteLine("ID: {0}", ID); // ID of employee
             Console.WriteLine("Pay: {0}", Pay); // current pay for employee
+            Console.WriteLine("SSN: {0}", SocialSecurityNumber);
         }
     }
 }

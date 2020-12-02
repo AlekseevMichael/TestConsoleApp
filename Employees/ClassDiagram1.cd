@@ -10,7 +10,7 @@
   <Class Name="Employees.Manager">
     <Position X="3.25" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAQA=</HashCode>
       <FileName>Manager.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -22,9 +22,9 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Employees.SalesPerson">
-    <Position X="3.25" Y="3.75" Width="1.5" />
+    <Position X="3.25" Y="4" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAACAAAAAAAAAAAQA=</HashCode>
       <FileName>SalesPerson.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -35,8 +35,18 @@
       <FileName>PTSalesPerson.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Employees.BenefitPackage" Collapsed="true">
+  <Class Name="Employees.BenefitPackage">
     <Position X="0.5" Y="6" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="Employees.BenefitPackage.BenefitPackageLevel">
+        <TypeIdentifier>
+          <NewMemberFileName>BenefitPackage.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
       <FileName>BenefitPackage.cs</FileName>
