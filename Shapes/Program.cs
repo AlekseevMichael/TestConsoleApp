@@ -27,6 +27,13 @@ namespace Shapes
                 shape.Draw();
             }
 
+            ThreeDCircle o = new ThreeDCircle();
+            //Вызываем метод, определенный в ThreeDCircle
+            o.Draw();
+
+            //Вызываем метод, определенный в родительском классе, при помощи явного приведения!
+            ((Circle)o).Draw();
+
             Console.ReadLine();
         }
     }
