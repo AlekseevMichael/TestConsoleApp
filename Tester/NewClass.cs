@@ -9,6 +9,7 @@ namespace Tester
     public class Card
     {
         int own;
+        bool b;
         private int ownerID = 12345;
         private string ownerName = "Michael";
 
