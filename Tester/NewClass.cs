@@ -8,6 +8,7 @@ namespace Tester
 {
     public class Card
     {
+        int own;
         private int ownerID = 12345;
         private string ownerName = "Michael";
 
